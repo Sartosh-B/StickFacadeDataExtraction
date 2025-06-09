@@ -37,3 +37,4 @@ C:\Users\sarwab\Desktop\DevThings\StickFacadeDataExtraction\obj\x64\Release\net4
 C:\Users\sarwab\Desktop\DevThings\StickFacadeDataExtraction\obj\x64\Release\net4.8\StickFac.432D27EE.Up2Date
 C:\Users\sarwab\Desktop\DevThings\StickFacadeDataExtraction\obj\x64\Release\net4.8\StickFacadeDataExtraction.dll
 C:\Users\sarwab\Desktop\DevThings\StickFacadeDataExtraction\obj\x64\Release\net4.8\StickFacadeDataExtraction.pdb
+C:\Users\sarwab\Desktop\DevThings\StickFacadeDataExtraction\obj\x64\Release\net4.8\StickFacadeDataExtraction.sourcelink.json

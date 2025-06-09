@@ -2,6 +2,7 @@
 using Autodesk.AutoCAD.ApplicationServices;
 using Autodesk.AutoCAD.EditorInput;
 using StickFacadeDataExtraction.Reporting;
+using System.Collections.Generic;
 
 namespace StickFacadeDataExtraction
 {
@@ -21,6 +22,8 @@ namespace StickFacadeDataExtraction
             FacadeDataProcessor processor = new FacadeDataProcessor(doc);
             processor.ProcessFacadeData();
 
+            
+
             ed.WriteMessage("\nZakończono zbieranie danych fasady.\n");
 
             // Użyj reporterów i przekaż im dane z processor
@@ -28,5 +31,8 @@ namespace StickFacadeDataExtraction
             reporter.ReportMullions(processor.Mullions);
             reporter.ReportTransoms(processor.Transoms);
         }
+
     }
+
+
 }

@@ -3,24 +3,40 @@
   "WorkspaceRootPath": "C:\\Users\\sarwab\\Desktop\\DevThings\\StickFacadeDataExtraction\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{02B0A165-DA73-479E-816F-4EF625655F77}|StickFacadeDataExtraction.csproj|c:\\users\\sarwab\\desktop\\devthings\\stickfacadedataextraction\\facadedatacollector.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{02B0A165-DA73-479E-816F-4EF625655F77}|StickFacadeDataExtraction.csproj|solutionrelative:facadedatacollector.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{02B0A165-DA73-479E-816F-4EF625655F77}|StickFacadeDataExtraction.csproj|c:\\users\\sarwab\\desktop\\devthings\\stickfacadedataextraction\\facadedataexporter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{02B0A165-DA73-479E-816F-4EF625655F77}|StickFacadeDataExtraction.csproj|solutionrelative:facadedataexporter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{02B0A165-DA73-479E-816F-4EF625655F77}|StickFacadeDataExtraction.csproj|c:\\users\\sarwab\\desktop\\devthings\\stickfacadedataextraction\\facadedatareporter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{02B0A165-DA73-479E-816F-4EF625655F77}|StickFacadeDataExtraction.csproj|solutionrelative:facadedatareporter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{02B0A165-DA73-479E-816F-4EF625655F77}|StickFacadeDataExtraction.csproj|c:\\users\\sarwab\\desktop\\devthings\\stickfacadedataextraction\\facadetagassigner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{02B0A165-DA73-479E-816F-4EF625655F77}|StickFacadeDataExtraction.csproj|solutionrelative:facadetagassigner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{02B0A165-DA73-479E-816F-4EF625655F77}|StickFacadeDataExtraction.csproj|c:\\users\\sarwab\\desktop\\devthings\\stickfacadedataextraction\\facadetagdrawer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{02B0A165-DA73-479E-816F-4EF625655F77}|StickFacadeDataExtraction.csproj|solutionrelative:facadetagdrawer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{02B0A165-DA73-479E-816F-4EF625655F77}|StickFacadeDataExtraction.csproj|c:\\users\\sarwab\\desktop\\devthings\\stickfacadedataextraction\\facadeelement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{02B0A165-DA73-479E-816F-4EF625655F77}|StickFacadeDataExtraction.csproj|solutionrelative:facadeelement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{02B0A165-DA73-479E-816F-4EF625655F77}|StickFacadeDataExtraction.csproj|c:\\users\\sarwab\\desktop\\devthings\\stickfacadedataextraction\\coreprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{02B0A165-DA73-479E-816F-4EF625655F77}|StickFacadeDataExtraction.csproj|solutionrelative:coreprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{02B0A165-DA73-479E-816F-4EF625655F77}|StickFacadeDataExtraction.csproj|c:\\users\\sarwab\\desktop\\devthings\\stickfacadedataextraction\\facadedatacollector.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{02B0A165-DA73-479E-816F-4EF625655F77}|StickFacadeDataExtraction.csproj|solutionrelative:facadedatacollector.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{02B0A165-DA73-479E-816F-4EF625655F77}|StickFacadeDataExtraction.csproj|c:\\users\\sarwab\\desktop\\devthings\\stickfacadedataextraction\\facadearealoads.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{02B0A165-DA73-479E-816F-4EF625655F77}|StickFacadeDataExtraction.csproj|solutionrelative:facadearealoads.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{02B0A165-DA73-479E-816F-4EF625655F77}|StickFacadeDataExtraction.csproj|c:\\users\\sarwab\\desktop\\devthings\\stickfacadedataextraction\\facadedatareporter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{02B0A165-DA73-479E-816F-4EF625655F77}|StickFacadeDataExtraction.csproj|solutionrelative:facadedatareporter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{02B0A165-DA73-479E-816F-4EF625655F77}|StickFacadeDataExtraction.csproj|c:\\users\\sarwab\\desktop\\devthings\\stickfacadedataextraction\\facadegeometryhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{02B0A165-DA73-479E-816F-4EF625655F77}|StickFacadeDataExtraction.csproj|solutionrelative:facadegeometryhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{02B0A165-DA73-479E-816F-4EF625655F77}|StickFacadeDataExtraction.csproj|c:\\users\\sarwab\\desktop\\devthings\\stickfacadedataextraction\\coreprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{02B0A165-DA73-479E-816F-4EF625655F77}|StickFacadeDataExtraction.csproj|solutionrelative:coreprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{02B0A165-DA73-479E-816F-4EF625655F77}|StickFacadeDataExtraction.csproj|c:\\users\\sarwab\\desktop\\devthings\\stickfacadedataextraction\\stickfacadedataextraction.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
@@ -34,82 +50,133 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "FacadeDataReporter.cs",
-              "DocumentMoniker": "C:\\Users\\sarwab\\Desktop\\DevThings\\StickFacadeDataExtraction\\FacadeDataReporter.cs",
-              "RelativeDocumentMoniker": "FacadeDataReporter.cs",
-              "ToolTip": "C:\\Users\\sarwab\\Desktop\\DevThings\\StickFacadeDataExtraction\\FacadeDataReporter.cs",
-              "RelativeToolTip": "FacadeDataReporter.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAQwBIAAABNAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "FacadeTagDrawer.cs",
+              "DocumentMoniker": "C:\\Users\\sarwab\\Desktop\\DevThings\\StickFacadeDataExtraction\\FacadeTagDrawer.cs",
+              "RelativeDocumentMoniker": "FacadeTagDrawer.cs",
+              "ToolTip": "C:\\Users\\sarwab\\Desktop\\DevThings\\StickFacadeDataExtraction\\FacadeTagDrawer.cs",
+              "RelativeToolTip": "FacadeTagDrawer.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAmwBsAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-06T13:53:00.002Z",
+              "WhenOpened": "2025-06-09T13:41:30.465Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "FacadeTagAssigner.cs",
+              "DocumentMoniker": "C:\\Users\\sarwab\\Desktop\\DevThings\\StickFacadeDataExtraction\\FacadeTagAssigner.cs",
+              "RelativeDocumentMoniker": "FacadeTagAssigner.cs",
+              "ToolTip": "C:\\Users\\sarwab\\Desktop\\DevThings\\StickFacadeDataExtraction\\FacadeTagAssigner.cs",
+              "RelativeToolTip": "FacadeTagAssigner.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-09T13:40:43.768Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "FacadeDataExporter.cs",
+              "DocumentMoniker": "C:\\Users\\sarwab\\Desktop\\DevThings\\StickFacadeDataExtraction\\FacadeDataExporter.cs",
+              "RelativeDocumentMoniker": "FacadeDataExporter.cs",
+              "ToolTip": "C:\\Users\\sarwab\\Desktop\\DevThings\\StickFacadeDataExtraction\\FacadeDataExporter.cs",
+              "RelativeToolTip": "FacadeDataExporter.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACwAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-09T12:22:22.906Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "FacadeDataCollector.cs",
               "DocumentMoniker": "C:\\Users\\sarwab\\Desktop\\DevThings\\StickFacadeDataExtraction\\FacadeDataCollector.cs",
               "RelativeDocumentMoniker": "FacadeDataCollector.cs",
               "ToolTip": "C:\\Users\\sarwab\\Desktop\\DevThings\\StickFacadeDataExtraction\\FacadeDataCollector.cs",
               "RelativeToolTip": "FacadeDataCollector.cs",
-              "ViewState": "AgIAACwAAAAAAAAAAAAAwFEAAAAcAAAAAAAAAA==",
+              "ViewState": "AgIAADQAAAAAAAAAAAAWwGsAAAA9AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-06T13:42:45.099Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "FacadeAreaLoads.cs",
-              "DocumentMoniker": "C:\\Users\\sarwab\\Desktop\\DevThings\\StickFacadeDataExtraction\\FacadeAreaLoads.cs",
-              "RelativeDocumentMoniker": "FacadeAreaLoads.cs",
-              "ToolTip": "C:\\Users\\sarwab\\Desktop\\DevThings\\StickFacadeDataExtraction\\FacadeAreaLoads.cs",
-              "RelativeToolTip": "FacadeAreaLoads.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-06T13:41:51.282Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "FacadeElement.cs",
               "DocumentMoniker": "C:\\Users\\sarwab\\Desktop\\DevThings\\StickFacadeDataExtraction\\FacadeElement.cs",
               "RelativeDocumentMoniker": "FacadeElement.cs",
               "ToolTip": "C:\\Users\\sarwab\\Desktop\\DevThings\\StickFacadeDataExtraction\\FacadeElement.cs",
               "RelativeToolTip": "FacadeElement.cs",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAkwGQAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAD8AAAAAAAAAAAAiwGIAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-06T13:40:58.756Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "StickFacadeDataExtraction",
+              "DocumentIndex": 7,
+              "Title": "FacadeGeometryHelper.cs",
+              "DocumentMoniker": "C:\\Users\\sarwab\\Desktop\\DevThings\\StickFacadeDataExtraction\\FacadeGeometryHelper.cs",
+              "RelativeDocumentMoniker": "FacadeGeometryHelper.cs",
+              "ToolTip": "C:\\Users\\sarwab\\Desktop\\DevThings\\StickFacadeDataExtraction\\FacadeGeometryHelper.cs",
+              "RelativeToolTip": "FacadeGeometryHelper.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-09T10:03:27.909Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FacadeDataReporter.cs",
+              "DocumentMoniker": "C:\\Users\\sarwab\\Desktop\\DevThings\\StickFacadeDataExtraction\\FacadeDataReporter.cs",
+              "RelativeDocumentMoniker": "FacadeDataReporter.cs",
+              "ToolTip": "C:\\Users\\sarwab\\Desktop\\DevThings\\StickFacadeDataExtraction\\FacadeDataReporter.cs",
+              "RelativeToolTip": "FacadeDataReporter.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAgwCkAAABGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-06T13:53:00.002Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "FacadeAreaLoads.cs",
+              "DocumentMoniker": "C:\\Users\\sarwab\\Desktop\\DevThings\\StickFacadeDataExtraction\\FacadeAreaLoads.cs",
+              "RelativeDocumentMoniker": "FacadeAreaLoads.cs",
+              "ToolTip": "C:\\Users\\sarwab\\Desktop\\DevThings\\StickFacadeDataExtraction\\FacadeAreaLoads.cs",
+              "RelativeToolTip": "FacadeAreaLoads.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-06T13:41:51.282Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "StickFacadeDataExtraction.csproj",
               "DocumentMoniker": "C:\\Users\\sarwab\\Desktop\\DevThings\\StickFacadeDataExtraction\\StickFacadeDataExtraction.csproj",
               "RelativeDocumentMoniker": "StickFacadeDataExtraction.csproj",
               "ToolTip": "C:\\Users\\sarwab\\Desktop\\DevThings\\StickFacadeDataExtraction\\StickFacadeDataExtraction.csproj",
               "RelativeToolTip": "StickFacadeDataExtraction.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-06-06T13:39:17.925Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-06T13:39:17.925Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 8,
               "Title": "CoreProgram.cs",
               "DocumentMoniker": "C:\\Users\\sarwab\\Desktop\\DevThings\\StickFacadeDataExtraction\\CoreProgram.cs",
               "RelativeDocumentMoniker": "CoreProgram.cs",
               "ToolTip": "C:\\Users\\sarwab\\Desktop\\DevThings\\StickFacadeDataExtraction\\CoreProgram.cs",
               "RelativeToolTip": "CoreProgram.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAA/AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-06T13:07:32.034Z",
               "EditorCaption": ""

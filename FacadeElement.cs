@@ -1,5 +1,7 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 using Autodesk.AutoCAD.Geometry;
+using Autodesk.AutoCAD.ApplicationServices;
 
 namespace StickFacadeDataExtraction
 {
@@ -45,29 +47,44 @@ namespace StickFacadeDataExtraction
         public double? WindPressureValue { get; set; }
         public double? DistanceToNeighbour1 { get; set; }
         public double? DistanceToNeighbour2 { get; set; }
-        public void AssignWindLoads(List<PressureAreaLoad> pressureLoads, List<SuctionAreaLoad> suctionLoads)
+
+        public string Tag { get; set; }
+
+        public List<Transom> ConnectedTransoms { get; set; } = new List<Transom>();
+
+        public void AssignWindLoadsFromConnectedTransoms()
         {
-            Point2d center = GetCenter();
+            var editor = Application.DocumentManager.MdiActiveDocument.Editor;
 
-            foreach (var load in pressureLoads)
+            editor.WriteMessage($"\n[DEBUG] Mullion: Start={Start}, End={End}, ConnectedTransoms={ConnectedTransoms.Count}");
+
+            var valuesPressure = new List<double>();
+            var valuesSuction = new List<double>();
+
+            var pointsToCheck = new List<Point2d> { Start, End };
+
+            foreach (var transom in ConnectedTransoms)
             {
-                if (PointInPolygon(center, load.Vertices))
-                {
-                    WindPressureValue = load.Value;
-                    break;
-                }
+                editor.WriteMessage($"\n[DEBUG]   Transom: Start={transom.Start}, End={transom.End}, Pressure={transom.WindPressureValue}, Suction={transom.WindSuctionValue}");
+
+                pointsToCheck.Add(transom.Start);
+                pointsToCheck.Add(transom.End);
+                pointsToCheck.Add(transom.GetCenter());
+
+                if (transom.WindPressureValue.HasValue)
+                    valuesPressure.Add(transom.WindPressureValue.Value);
+                if (transom.WindSuctionValue.HasValue)
+                    valuesSuction.Add(transom.WindSuctionValue.Value);
             }
 
-            foreach (var load in suctionLoads)
-            {
-                if (PointInPolygon(center, load.Vertices))
-                {
-                    WindSuctionValue = load.Value;
-                    break;
-                }
-            }
+            WindPressureValue = valuesPressure.Count > 0 ? valuesPressure.Max() : 0.0;
+            WindSuctionValue = valuesSuction.Count > 0 ? valuesSuction.Min() : 0.0;
+
+            editor.WriteMessage($"\n[DEBUG] => Assigned to Mullion: Pressure={WindPressureValue}, Suction={WindSuctionValue}");
         }
     }
+
+
 
     public class Transom : FacadeElement
     {
@@ -76,28 +93,35 @@ namespace StickFacadeDataExtraction
         public double? WindPressureValue { get; set; }
         public double? DistanceToNeighbour1 { get; set; }
         public double? DistanceToNeighbour2 { get; set; }
+        public Transom UpperNeighbour { get; set; }
+        public Transom LowerNeighbour { get; set; }
+
+        public string Tag { get; set; }
 
         public void AssignWindLoads(List<PressureAreaLoad> pressureLoads, List<SuctionAreaLoad> suctionLoads)
         {
-            Point2d center = GetCenter();
+            var pointsToCheck = new[] { Start, End, GetCenter() };
 
-            foreach (var load in pressureLoads)
+            var pressures = new List<double>();
+            var suctions = new List<double>();
+
+            foreach (var pt in pointsToCheck)
             {
-                if (PointInPolygon(center, load.Vertices))
+                foreach (var pl in pressureLoads)
                 {
-                    WindPressureValue = load.Value;
-                    break;
+                    if (PointInPolygon(pt, pl.Vertices))
+                        pressures.Add(pl.Value);
+                }
+
+                foreach (var sl in suctionLoads)
+                {
+                    if (PointInPolygon(pt, sl.Vertices))
+                        suctions.Add(sl.Value);
                 }
             }
 
-            foreach (var load in suctionLoads)
-            {
-                if (PointInPolygon(center, load.Vertices))
-                {
-                    WindSuctionValue = load.Value;
-                    break;
-                }
-            }
+            WindPressureValue = pressures.Count > 0 ? pressures.Max() : 0.0;
+            WindSuctionValue = suctions.Count > 0 ? suctions.Min() : 0.0;
         }
     }
 }
