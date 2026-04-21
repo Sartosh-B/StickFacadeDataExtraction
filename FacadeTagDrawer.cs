@@ -22,7 +22,7 @@ namespace StickFacadeDataExtraction
                 {
                     var center = MidPoint(m.Start, m.End);
                     var mtext = CreateTagMText(m.Tag, center);
-                    mtext.Layer = m.Layer; // <- ustawienie warstwy
+                    mtext.Layer = m.Layer; // <- set layer
                     btr.AppendEntity(mtext);
                     tr.AddNewlyCreatedDBObject(mtext, true);
                 }
@@ -31,7 +31,7 @@ namespace StickFacadeDataExtraction
                 {
                     var center = MidPoint(t.Start, t.End);
                     var mtext = CreateTagMText(t.Tag, center);
-                    mtext.Layer = t.Layer; // <- ustawienie warstwy
+                    mtext.Layer = t.Layer; // <- set layer
                     btr.AppendEntity(mtext);
                     tr.AddNewlyCreatedDBObject(mtext, true);
                 }

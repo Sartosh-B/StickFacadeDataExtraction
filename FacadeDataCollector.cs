@@ -38,7 +38,7 @@ namespace StickFacadeDataExtraction
                 BlockTable bt = (BlockTable)tr.GetObject(_doc.Database.BlockTableId, OpenMode.ForRead);
                 BlockTableRecord modelSpace = (BlockTableRecord)tr.GetObject(bt[BlockTableRecord.ModelSpace], OpenMode.ForRead);
 
-                // Znajdź wszystkie polilinie 2-punktowe -> FacadeElements
+                // Find all 2-vertex polylines -> FacadeElements
                 foreach (ObjectId entId in modelSpace)
                 {
                     Entity ent = (Entity)tr.GetObject(entId, OpenMode.ForRead);
@@ -66,12 +66,12 @@ namespace StickFacadeDataExtraction
                 _ed.WriteMessage($"\nZnaleziono {AllFacadeElements.Count} elementów fasady (2-punktowych).");
                 _ed.WriteMessage($"\nZnaleziono {AreaLoads.Count} obciążeń powierzchniowych (4-punktowych).");
 
-                // Rozdziel elementy na Mullions i Transoms
+                // Separate elements into Mullions and Transoms
                 SeparateFacadeElements();
 
-                _ed.WriteMessage($"\nMullionów: {Mullions.Count}, Transomów: {Transoms.Count}");
+                _ed.WriteMessage($"\nMullions: {Mullions.Count}, Transoms: {Transoms.Count}");
 
-                // (opcjonalnie) przypisz pozycje, jeśli jeszcze nie przypisane
+                // (optionally) assign positions if not already assigned
                 AssignPositions(Mullions, Transoms);
 
                 AssociateTransomsToMullions(Mullions, Transoms);
@@ -194,7 +194,7 @@ namespace StickFacadeDataExtraction
         {
             foreach (var elem in AllFacadeElements)
             {
-                // Prosty przykład: jeśli start.X == end.X => Mullion, jeśli start.Y == end.Y => Transom
+                // Logic: if start.X == end.X => Mullion, if start.Y == end.Y => Transom
                 if (elem.Start.X == elem.End.X)
                 {
                     Mullion mullion = new Mullion
@@ -202,7 +202,7 @@ namespace StickFacadeDataExtraction
                         Layer = elem.Layer,
                         Start = elem.Start,
                         End = elem.End
-                        // Pozostałe właściwości przypisz w przyszłości
+                       
                     };
                     Mullions.Add(mullion);
                 }

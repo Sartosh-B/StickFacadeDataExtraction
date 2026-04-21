@@ -11,10 +11,7 @@ namespace StickFacadeDataExtraction
         public Point2d Start { get; set; }
         public Point2d End { get; set; }
 
-        public virtual void AnalyzeMetadata()
-        {
-            // Tu można później rozszerzyć analizę nazwy warstwy, pozycji itp.
-        }
+
         public Point2d GetCenter()
         {
             return new Point2d((Start.X + End.X) / 2.0, (Start.Y + End.Y) / 2.0);
@@ -42,7 +39,7 @@ namespace StickFacadeDataExtraction
 
     public class Mullion : FacadeElement
     {
-        public string Position { get; set; } // "MID" lub "SID"
+        public string Position { get; set; } // "MID" or "SID"
         public double? WindSuctionValue { get; set; }
         public double? WindPressureValue { get; set; }
         public double? DistanceToNeighbour1 { get; set; }

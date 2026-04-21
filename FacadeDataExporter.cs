@@ -4,6 +4,7 @@ using System.Text;
 using System.Globalization;
 using Autodesk.AutoCAD.ApplicationServices;
 using StickFacadeDataExtraction;
+using Microsoft.SqlServer.Server;
 
 namespace StickFacadeDataExtraction.Reporting
 {
@@ -25,19 +26,19 @@ namespace StickFacadeDataExtraction.Reporting
             {
                 using (var writer = new StreamWriter(filePath, false, Encoding.UTF8))
                 {
-                    // Nagłówek
+                    // Header
                     writer.WriteLine("Type;Tag;Layer;StartX;StartY;EndX;EndY;Position;WindPressure;WindSuction;Dist1;Dist2");
 
                     // Mullions
                     foreach (var m in mullions)
                     {
-                        writer.WriteLine($"Mullion;{m.Tag};{m.Layer};{m.Start.X};{m.Start.Y};{m.End.X};{m.End.Y};{m.Position};{Format(m.WindPressureValue)};{Format(m.WindSuctionValue)};{Format(m.DistanceToNeighbour1)};{Format(m.DistanceToNeighbour2)}");
+                        writer.WriteLine($"Mullion;{m.Tag};{m.Layer};{Format(m.Start.X)};{Format(m.Start.Y)};{Format(m.End.X)};{Format(m.End.Y)};{m.Position};{Format(m.WindPressureValue)};{Format(m.WindSuctionValue)};{Format(m.DistanceToNeighbour1)};{Format(m.DistanceToNeighbour2)}");
                     }
 
                     // Transoms
                     foreach (var t in transoms)
                     {
-                        writer.WriteLine($"Transom;{t.Tag};{t.Layer};{t.Start.X};{t.Start.Y};{t.End.X};{t.End.Y};{t.Position};{Format(t.WindPressureValue)};{Format(t.WindSuctionValue)};{Format(t.DistanceToNeighbour1)};{Format(t.DistanceToNeighbour2)}");
+                        writer.WriteLine($"Transom;{t.Tag};{t.Layer};{Format(t.Start.X)};{Format(t.Start.Y)};{Format(t.End.X)};{Format(t.End.Y)};{t.Position};{Format(t.WindPressureValue)};{Format(t.WindSuctionValue)};{Format(t.DistanceToNeighbour1)};{Format(t.DistanceToNeighbour2)}");
                     }
                 }
 
@@ -45,7 +46,7 @@ namespace StickFacadeDataExtraction.Reporting
             }
             catch (IOException ex)
             {
-                doc.Editor.WriteMessage($"\nBłąd zapisu pliku CSV: {ex.Message}");
+                doc.Editor.WriteMessage($"\nError writing CSV file: {ex.Message}");
             }
         }
 

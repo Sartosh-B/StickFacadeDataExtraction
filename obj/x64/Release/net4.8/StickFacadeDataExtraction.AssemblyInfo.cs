@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("StickFacadeDataExtraction")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b26ebcdf23f998432d9be8909cc4284445dd65bf")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+eb530c069b2301d24ebc7f5413a790c5fdf8fa77")]
 [assembly: System.Reflection.AssemblyProductAttribute("StickFacadeDataExtraction")]
 [assembly: System.Reflection.AssemblyTitleAttribute("StickFacadeDataExtraction")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

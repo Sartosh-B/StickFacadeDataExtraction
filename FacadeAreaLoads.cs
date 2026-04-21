@@ -8,7 +8,7 @@ namespace StickFacadeDataExtraction
         public string Layer { get; set; }
         public List<Point2d> Vertices { get; set; } = new List<Point2d>();
 
-        // Tutaj w przyszłości można dodać więcej właściwości związanych z obciążeniem powierzchniowym
+      
     }
     public class PressureAreaLoad : FacadeAreaLoad
     {

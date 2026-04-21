@@ -16,17 +16,18 @@ namespace StickFacadeDataExtraction
 
             Editor ed = doc.Editor;
 
-            ed.WriteMessage("\nRozpoczynam zbieranie danych fasady...\n");
+            ed.WriteMessage("\nStarting collecting facade data...\n");
 
-            // Utwórz i uruchom procesor
+            // Create and run the processor
             FacadeDataProcessor processor = new FacadeDataProcessor(doc);
             processor.ProcessFacadeData();
 
             
 
-            ed.WriteMessage("\nZakończono zbieranie danych fasady.\n");
+            ed.WriteMessage("\nFinished collecting facade data.\n");
 
-            // Użyj reporterów i przekaż im dane z processor
+            
+            // Use the reporter and pass the data from processor
             var reporter = new FacadeDataReporter();
             reporter.ReportMullions(processor.Mullions);
             reporter.ReportTransoms(processor.Transoms);

@@ -1,7 +1,7 @@
 ﻿using Autodesk.AutoCAD.ApplicationServices;
 using Autodesk.AutoCAD.EditorInput;
 using System.Collections.Generic;
-using StickFacadeDataExtraction; // Dodaj, jeśli klasy Mullion/Transom są w tym namespace
+
 
 namespace StickFacadeDataExtraction.Reporting
 {
